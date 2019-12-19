@@ -1,17 +1,16 @@
-# Project Name
+# Mentions
 
-> Project description
+> Displays mentions for a particular restaurant.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/HRR42-SDC6-Baclava/image-Flora.git
+  - https://github.com/HRR42-SDC6-Baclava/service-Amer.git
 
 ## Table of Contents
 
 1. [Usage](#Usage)
+1. [CRUD API](#Crud)
 1. [Requirements](#requirements)
 1. [Development](#development)
 
@@ -19,11 +18,15 @@
 
 > Some usage instructions
 
+## CRUD API
+
+- GET ```/restaurants/:id``` returns a restaurant mentions object from id
+- POST ```/restaurants``` creates a new restaurant object
+- PUT ```/restaurants/:id``` updates an existing restaurant object
+- DELETE ```/restaurants/:id``` deletes a restaurant object
+
 ## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
 - etc
 
 ## Development

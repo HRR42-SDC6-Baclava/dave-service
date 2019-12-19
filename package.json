@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/hackreactor/hrr42-front-end-capstone.git"
   },
-  "author": "Camryn Reid",
+  "contributors": [
+    { "name": "Camryn Reid"},
+    { "name": "David Clay",
+      "email": "dclay1983@gmail.com"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hackreactor/hrr42-front-end-capstone/issues"
