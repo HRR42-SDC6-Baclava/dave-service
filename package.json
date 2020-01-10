@@ -4,7 +4,7 @@
   "description": "fec",
   "main": "app.js",
   "scripts": {
-    "seedneo": "node neo4j/seed.js",
+    "seedneo": "node database/seed.js",
     "test": "echo no test identified",
     "start": "node server/server.js",
     "prestartdev": "node -r dotenv/config config.js",
