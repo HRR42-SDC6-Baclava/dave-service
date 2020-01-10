@@ -12,7 +12,6 @@ app.use(cors());
 
 app.get('/api/restaurants/:id', (req, res) => {
   var id = parseInt(req.params.id);
-  // console.log("Restaurant ID: ", id);
   db.get(id, (err, results) => {
     if (err) {
       res.status(500);

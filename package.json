@@ -7,8 +7,7 @@
     "seedneo": "node database/seed.js",
     "test": "echo no test identified",
     "start": "node server/server.js",
-    "prestartdev": "node -r dotenv/config config.js",
-    "startdev": "nodemon server/server.js",
+    "startdev": "node -r dotenv/config server/server.js",
     "build": "webpack -d",
     "builddev": "webpack -d --watch"
   },
