@@ -1,9 +1,11 @@
 const neo4j = require('neo4j-driver');
 const faker = require('faker');
-
+const un = process.env.DB_USER;
+const pw = process.env.DB_PASS
+const host = DB_HOST
 const driver = neo4j.driver(
-  'bolt://localhost:7687',
-  neo4j.auth.basic('neo4j','hrr42')
+  host,
+  neo4j.auth.basic(un,pw)
 )
 
 module.exports = driver;

@@ -12,7 +12,7 @@ const db = {
         for (let i = 0; i < results.length; i++) {
           results[i].id = results[i].id.low;
         }
-        done(null, results);
+        done(null, {id, articles: results});
       })
       .catch(err => {
         done(err);

@@ -69,5 +69,12 @@ session.writeTransaction(tx => createConstraints(tx))
     .then(ignore => {
       process.exit();
     })
+    .catch(err => {
+      console.log(err);
+      session.close();
+    })
+  })
+  .catch(err => {
+    console.log(err);
   });
 });

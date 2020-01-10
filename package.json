@@ -4,10 +4,13 @@
   "description": "fec",
   "main": "app.js",
   "scripts": {
-    "seedneo": "node --max-old-space-size=6144 database/neo4j/seed.js",
-    "test": "test",
-    "startneo": "DB=neo4j nodemon server/server.js",
-    "build": "webpack -d --watch"
+    "seedneo": "node neo4j/seed.js",
+    "test": "echo no test identified",
+    "start": "node server/server.js",
+    "prestartdev": "node -r dotenv/config config.js",
+    "startdev": "nodemon server/server.js",
+    "build": "webpack -d",
+    "builddev": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -45,6 +48,7 @@
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
-    "newrelic": "^6.2.0"
+    "newrelic": "^6.2.0",
+    "dotenv": "^8.2.0"
   }
 }
